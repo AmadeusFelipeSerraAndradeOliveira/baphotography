@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfólio | Baphotography</title>
+  <meta name="description" content="Explore todos os álbuns de casamentos, pré-wedding, ensaios e filmes produzidos pela Baphotography.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:title" content="Portfólio | Baphotography">
+  <meta property="og:description" content="Explore todos os álbuns de casamentos, pré-wedding, ensaios e filmes produzidos pela Baphotography.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="sr skip-link" href="#main">Pular para o conteúdo principal</a>
+  <div id="site-header"></div>
+
+  <main id="main">
+    <div class="wrap">
+      <section class="album-hero" style="border:0">
+        <p class="eyebrow">Arquivo de Histórias</p>
+        <h1 class="reveal">Portfólio Completo</h1>
+        <p class="muted reveal" style="max-width:38rem;margin-top:1.2rem">Um olhar autêntico dedicado a capturar os encontros, os olhares cúmplices e os instantes que merecem ser revividos para sempre.</p>
+      </section>
+
+      <section style="padding-top:1rem">
+        <div class="filters-bar">
+          <div class="filters" id="filters" role="group" aria-label="Filtrar por categoria"></div>
+        </div>
+
+        <div id="list" class="grid-albums" aria-live="polite">
+          <div class="skeleton" style="grid-column:span 12"></div>
+        </div>
+
+        <div style="margin-top:3.5rem;text-align:center">
+          <button class="btn ghost" id="more" hidden>Carregar mais álbuns ↓</button>
+        </div>
+      </section>
+
+      <!-- Seção CTA -->
+      <section class="cta-section" style="margin-block:4rem;border-radius:var(--radius-sm)">
+        <div class="wrap" style="padding-inline:0">
+          <div class="cta-content">
+            <p class="eyebrow">Planejando seu casamento?</p>
+            <h2>Gostaria de ter sua história contada assim?</h2>
+            <p>Converse conosco sobre a data e conheça nossas opções de cobertura fotográfica e videográfica.</p>
+            <button class="btn quote-modal-open" type="button">Solicitar orçamento personalizado</button>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <div id="site-footer"></div>
+  <script type="module" src="js/portfolio.js"></script>
+</body>
+</html>

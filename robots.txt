@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /admin/
+Sitemap: https://SEU-PROJETO.web.app/sitemap.xml

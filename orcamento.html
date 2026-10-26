@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Solicitar Orçamento | Baphotography</title>
+  <meta name="description" content="Solicite um orçamento de fotografia e videografia de casamento para o seu evento.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:title" content="Solicitar Orçamento | Baphotography">
+  <meta property="og:description" content="Solicite um orçamento de fotografia e videografia de casamento para o seu evento.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="sr skip-link" href="#main">Pular para o conteúdo principal</a>
+  <div id="site-header"></div>
+
+  <main id="main">
+    <div class="wrap">
+      <section style="padding-block:clamp(3.5rem,6vw,6.5rem)">
+        <div style="display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.2fr);gap:clamp(2rem,6vw,5.5rem);align-items:start">
+          <div>
+            <p class="eyebrow">Vamos Conversar</p>
+            <h1>Solicitar Orçamento</h1>
+            <p class="muted" style="margin-top:1.2rem;font-size:1.05rem;line-height:1.7">Conte um pouco sobre o grande dia que vocês estão sonhando. Será um prazer imenso fazer parte desse capítulo da vida de vocês.</p>
+            <div style="margin-top:3rem;padding-top:2rem;border-top:1px solid var(--line)">
+              <h4 style="font-family:var(--sans);font-size:.72rem;letter-spacing:.15em;text-transform:uppercase;color:var(--gold);margin-bottom:.6rem">Atendimento Personalizado</h4>
+              <p class="muted" style="font-size:.9rem">Após preencher o formulário, você poderá revisar a proposta e continuar a conversa com o fotógrafo no WhatsApp com os detalhes já preenchidos.</p>
+            </div>
+          </div>
+
+          <div style="background:var(--surface);border:1px solid var(--line);padding:clamp(1.5rem,4vw,2.8rem);border-radius:var(--radius-sm);box-shadow:var(--shadow-sm)">
+            <form id="q" class="form" novalidate>
+              <div class="modal-grid-2">
+                <label>Nome completo *<input name="name" autocomplete="name" required minlength="2" maxlength="120" placeholder="Ex.: Mariana & Rafael"><span class="err" data-for="name"></span></label>
+                <label>WhatsApp ou telefone *<input name="phone" type="tel" autocomplete="tel" inputmode="tel" required placeholder="(DDD) 99999-9999"><span class="err" data-for="phone"></span></label>
+              </div>
+              <div class="modal-grid-2">
+                <label>E-mail (opcional)<input name="email" type="email" autocomplete="email" placeholder="seuemail@exemplo.com"><span class="err" data-for="email"></span></label>
+                <label>Tipo de serviço *
+                  <select name="service" required>
+                    <option value="">Selecione o serviço</option>
+                  </select>
+                  <span class="err" data-for="service"></span>
+                </label>
+              </div>
+              <div class="modal-grid-3">
+                <label>Data desejada *<input name="eventDate" type="date" required><span class="err" data-for="eventDate"></span></label>
+                <label>Horário desejado (opcional)<input name="eventTime" type="time" placeholder="Ex.: 16:30"><span class="err" data-for="eventTime"></span></label>
+                <label>Cidade / Local (opcional)<input name="location" maxlength="160" placeholder="Ex.: Palmas-TO"><span class="err" data-for="location"></span></label>
+              </div>
+              <label>Observações ou mensagem (opcional)<textarea name="notes" maxlength="1000" placeholder="Compartilhe detalhes do casamento, local da cerimônia, estilo do evento..."></textarea><span class="err" data-for="notes"></span></label>
+              <label class="hp" aria-hidden="true">Deixe vazio<input name="website" tabindex="-1" autocomplete="off"></label>
+              <label class="consent-row">
+                <input type="checkbox" name="consent" required checked>
+                <span>Concordo com o registro dos dados para atendimento deste orçamento, respeitando a política de retenção de 60 dias da Baphotography.</span>
+              </label>
+              <span class="err" data-for="consent"></span>
+              <div style="margin-top:.8rem">
+                <button class="btn" id="send" type="submit">Enviar solicitação</button>
+              </div>
+            </form>
+            <div id="result" aria-live="polite" style="margin-top:1.5rem"></div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <div id="site-footer"></div>
+  <script type="module" src="js/quote.js"></script>
+</body>
+</html>

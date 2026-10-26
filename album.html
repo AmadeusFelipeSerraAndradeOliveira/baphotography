@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Álbum | Baphotography</title>
+  <meta name="description" content="Galeria de fotografias do álbum na Baphotography.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:title" content="Álbum | Baphotography">
+  <meta property="og:description" content="Galeria de fotografias do álbum na Baphotography.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="sr skip-link" href="#main">Pular para o conteúdo principal</a>
+  <div id="site-header"></div>
+
+  <main id="main">
+    <div class="wrap">
+      <section class="album-hero">
+        <a class="btn ghost small" href="portfolio.html" style="margin-bottom:1.5rem">← Voltar ao portfólio</a>
+        <p class="eyebrow" id="a-category">Uma história em imagens</p>
+        <h1 id="a-title">Carregando álbum…</h1>
+        <p class="muted" id="a-meta" style="font-size:0.85rem;letter-spacing:0.1em;text-transform:uppercase;margin-top:.8rem"></p>
+        <p id="a-desc" style="max-width:44rem;margin-top:1.5rem;font-size:1.05rem;line-height:1.8"></p>
+      </section>
+
+      <section style="padding-top:2rem">
+        <!-- Galeria Masonry de Fotografias -->
+        <div class="masonry" id="gallery" aria-live="polite">
+          <div class="skeleton" style="min-height:22rem"></div>
+          <div class="skeleton" style="min-height:30rem"></div>
+          <div class="skeleton" style="min-height:18rem"></div>
+        </div>
+      </section>
+
+      <section class="cta-section" style="margin-block:5rem;border-radius:var(--radius-sm)">
+        <div class="wrap" style="padding-inline:0">
+          <div class="cta-content">
+            <p class="eyebrow">Gostou desse álbum?</p>
+            <h2>Vamos conversar sobre o registro do seu casamento?</h2>
+            <p>Entre em contato para saber sobre disponibilidade de datas e receber nossa proposta completa.</p>
+            <button class="btn quote-modal-open" type="button">Solicitar orçamento para seu evento</button>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <div id="site-footer"></div>
+  <script type="module" src="js/album.js"></script>
+</body>
+</html>
